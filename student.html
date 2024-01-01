@@ -1,0 +1,126 @@
+<html>
+<head>
+<title>Student registration Form</title>
+<style>
+nobo{
+	border:none;}
+align{
+	padding-left:50%}
+</style>
+</head>
+<body>
+<h1>Student Refistration form</h1>
+<form action="/action_page.php"method"="post">
+<table cellspacing="3"cellpadding="4"border="2">
+<tr>
+<td>first name:</td>
+<td colspan="6"><input type="text"name="fname"max="30"required></td>
+</tr>
+<tr><td>Last Name:</td>
+<td colspan="6"><input type="text"name="fname"max="30"required></td></tr>
+<tr>
+<td>Date of Birth:</td>
+<td colspan="6"><input type="date"name="dob"required></td></tr>
+<tr>
+<td>Email ID:</td>
+<td colspan="6"><input type="email"name="email"required></td></tr>
+<tr>
+<td>Mobile Number:</td>
+<td colspan="6"><input type="tel"name="mobile"pattern="[0-9]{10}"required></td></tr>
+<tr>
+<td>Gender:</td>
+<td colspan="6"><input type="radio"name="gender"required>Male
+<input type="radio"name="gender"required>Female
+</td></tr>
+<tr>
+<td>Address:</td>
+<td colspan="6"><text area></text area> </td></tr>
+<tr>
+<td>City:</td>
+<td colspan="6"><input type="text"name="city"max="30"required>(max 30 character)</td></tr>
+<td>Pin code:</td>
+<td colspan="6"><input type="number"name="pin code"pattern="[0-9]{6}"required>(6 digits)</td></tr>
+<tr>
+<td>State:</td>
+<td colspan="6"><input type="text"name="state"max="30"required>(max 30 character)</td></tr>
+<tr>
+<td>country:</td>
+<td colspan="6"><input name="country"required value="India"></input></td></tr>
+<tr><td>Hobbies:</td>
+<td colspan="6"><input type="checkbox"name="hobby">Dancing</input>
+<input type="checkbox"name="hobby">Singing</input>
+<input type="checkbox"name="hobby">Painting</input>
+<input type="checkbox"name="hobby">others</input>
+<input type="text"name="hobbies"max="30"required></td></tr>
+<tr>
+<td rowspan="6">Qualification:</td>
+<th class="nobo">sl<br>No:</th>
+<th class="nobo">Examinations:</th>
+<th class="nobo">Board:</th>
+<th class="nobo">Percentage:</th>
+<th class="nobo">year of passing:</th>
+<tr>
+<td class="nobo">1</td>
+<td class="nobo">class X</td>
+<td>
+<input type="text"name="qualification"max="10"required></td>
+<td>
+<input type="text"name="qualification"max="10"required></td>
+<td>
+<input type="text"name="qualification"max="10"required></td>
+</tr>
+<tr>
+<td class="nobo">2</td>
+<td class="nobo">class XII</td>
+<td>
+<input type="text"name="qualification"max="10"required></td>
+<td>
+<input type="text"name="qualification"max="10"required></td>
+<td>
+<input type="text"name="qualification"max="10"required></td>
+</tr>
+<tr>
+<td class="nobo">3</td>
+<td class="nobo">Graduation</td>
+<td>
+<input type="text"name="qualification"max="10"required></td>
+<td>
+<input type="text"name="qualification"max="10"required></td>
+<td>
+<input type="text"name="qualification"max="10"required></td>
+</tr>
+<tr>
+<td class="nobo">4</td>
+<td class="nobo">Masters</td>
+<td>
+<input type="text"name="qualification"max="10"required></td>
+<td>
+<input type="text"name="qualification"max="10"required></td>
+<td>
+<input type="text"name="qualification"max="10"required></td>
+</tr>
+<tr>
+<td>Courses applied for:</td>
+<td colspan="6">
+<input type="radio"name="courses"required>MCA
+<input type="radio"name="courses"required>M.Tech
+<input type="radio"name="courses"required>M.sc</option>
+<input type="radio"name="courses"required>Ph.D</option>
+</td></tr>
+<tr>
+<td>Type your password:</td>
+<td colspan="6"><input type="password"name="password"max="30"required>(max 30 character)</td></tr>
+<tr>
+<td>Date of TC</td>
+<td colspan="6"><input type="date"name="tc"required></td></tr>
+<tr>
+<td colspan="7" class="align">
+<input type="submit"value="submit">
+<input type="reset"value="reset">
+</td>
+</tr>
+</table>
+</form>
+</body>
+</html>
+

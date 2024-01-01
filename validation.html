@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Registraion form</title>
+<style>
+body{
+	font-family:sars-serif;
+	background-color:#f2f2f2;
+	margin:50px;
+	}
+form{
+	background-color:#fff;
+	padding:20px;
+	width:400px;
+	border-radius:5px;
+	box-shadow:0 0 10px rgba(0,0,0,0.1);
+	}
+h2{
+	text-align:center;
+	}
+label{
+	display:inline-block;
+	width:120px;
+	margin-bottom:10px;
+	}
+input[type="text"],input[type="email"],select,text area
+	{
+	width:250px;
+	padding:5px;
+	margin-bottom:10px;
+	border-radius:5px;
+	border:1px solid#ddd;
+	}
+input[type="submit"]
+	{
+	width:100%;
+	background-color:red;
+	color:white;
+	padding:10px 0;
+	border:none;
+	cursor:pointer;
+	}
+input[type="reset"]
+	{
+	width:100%;
+	background-color:red;
+	color:white;
+	padding:10px 0;
+	border:none;
+	cursor:pointer;
+	}
+input[type="submit"]:hover
+	{
+	background-color:#45a049;
+	}
+input[type="reset"]:hover
+	{
+	background-color:brown;
+	}		
+input[type="radio"],input[type="checkbox"]
+	{
+	margin-bottom:10px;
+	}
+text area
+	{
+	width:250px;
+	border-radius:5px;
+	border:1px solid #ddd;
+	}
+</style>
+</head>
+<body>
+<h2>Student Refistration form</h2>
+<table cellspacing="3"cellpadding="4"border="2">
+<form id="registration form"onsubmit="validateformevent">
+<tr>
+<td>first name:</td>
+<td><input type="text"name="fname"required></td>
+</tr>
+<tr><td>Last Name:</td>
+<td><input type="text"name="fname"required></td></tr>
+<tr>
+<td>Email ID:</td>
+<td><input type="email"name="email"required></td></tr>
+<tr>
+<td>Date of Birth:</td>
+<td><select id="day"required>
+<option value=" ">Day</option>
+<script>
+for(let i=1;i<31;i++)
+{
+document.getElementById("day").innerHTML t='<optionvalue="${i}">${i}</option>';
+}
+</script>
+</select>
+<select id="month"required>
+<option value=" ">Month</option>
+<script>
+const months=['January','february','March','April','May','June','July','August','September','Oct','Nov','Dec'];
+for(let i=0;i<months.length;i++)
+{
+document.getElementById("month").innerHTML t='<optionvalue="${months[i]}">${months[i]}</option>';
+}
+</script>
+</select>
+<select id="year"required>
+<option value=" ">Year</option>
+<script>
+const currentYear=new Date().getfullyear();
+for(let i=currentyear;i>=1900;i--)
+{
+document.getElementById("year").innerHTML t='<optionvalue="${i}">${i}</option>';
+}
+</script>
+</select></td></tr> 
+<tr>
+<td>Mobile Number:</td>
+<td><input type="text"id="mobileNumber"required></td></tr>
+<tr>
+<td>Gender:</td>
+<td><input type="radio"id="male"name="gender"value="male">
+<label for="male">Male</label><br>
+<input type="radio"id="female"name="gender"value="female">
+<label for="male">Female</label><br>
+</td></tr>
+<tr>
+<td>Address:</td>
+<td><text area id="address" rows="4" cols="30"trequired></text area> </td></tr>
+<tr>
+<td>City:</td>
+<td><input type="text"id="city"required></td></tr>
+<td>Pin code:</td>
+<td><input type="text"id="pin code"required></td></tr>
+<tr>
+<td>State:</td>
+<td><input type="text"id="state"required></td></tr>
+<tr>
+<td>Course:</td>
+<td><input type="Checkbox" id="Course1"name="course"value="mathematics">Mathematics<br>
+<input type="Checkbox" id="Course2"name="course"value="science">Science<br>
+<input type="Checkbox" id="Course3"name="course"value="history">History<br>
+</tr><tr>
+<td colspan="7"><input type="submit" value="submit">
+<input type="reset"value="reset"></td></tr></form></table>
+<script>
+function validationFormevent
+{
+varfirstName=documnet.getelementById("firstname").value;
+varday=documnet.getelementById("day").value;
+varmonth=documnet.getelementById("month").value;
+varyear=documnet.getelementById("year").value;
+varmobileNumber=documnet.getelementById("mobileNumber").value;
+varcourse1=documnet.getelementById("course1").value;
+varcourse2=documnet.getelementById("course2").value;
+varcourse3=documnet.getelementById("course3").value;
+if(firstName==" ")
+{
+	alert("first name cannot be blank");
+	event.preventDefault();
+	}
+if(day==||month==" "||year==" ")
+{
+	alert("please select a value for DOB");
+	event.preventDefault();
+	} 
+if(mobileNumber.length!==10))
+{
+	alert("mobile number should be 10 digit long");
+	event.preventDefault();
+	}
+if(pincode.length==7)
+{
+	alert("pincode should be 6 digit long");
+	event.preventDefault();
+	}
+if(!course1!course2**!course3)
+{
+	alert("please select atleast one option for course");
+	event.preventDefault();
+	}
+}</script>
+</body>
+</html>
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
